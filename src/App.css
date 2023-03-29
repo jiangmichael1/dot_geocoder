@@ -1,4 +1,4 @@
-@import "node_modules/ol/ol.css";
+
 
 .App {
   text-align: center;
@@ -40,7 +40,7 @@
 }
 
 .search_1 {
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: left;
 }
 
@@ -61,7 +61,8 @@ body {
 
 #map {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
+  top: 25%;
+  bottom: 25%;
+  left: 50%;
+  width: 50%;
 }
