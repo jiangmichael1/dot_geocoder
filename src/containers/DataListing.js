@@ -47,13 +47,10 @@ const fetchData = async () => {
         .get(proxy + function_1B_url)
         .catch((err) => {
             console.log("Err", err)
-        })
-        ;
+        });
 
     // Sends response to Redux store labeled as data
     dispatch(setData(response.data.display));
-    console.log(response.data.display)
-
     };
     
     useEffect(() => {
