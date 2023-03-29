@@ -5,24 +5,14 @@ import { useSelector } from 'react-redux';
 const DataComponent = () => {
     const data = useSelector((state) => state.allData.data);
 
-    
-
-    /* const render_3List = Object.entries(data).map((datum, index) => {
-        
+    /*
+    const render_3List = Object.entries(data).map((datum, index) => {
         const [label, value] = datum
         return(
             <div className='search_3' key={index}>
                 <p>{label}: {value} </p>
             </div>
         )
-
-        <p><b>Street Name: </b>{street_name}</p>
-        <p><b>High Address Number: </b>{high_address_number}</p>
-        <p><b>Low Address Number: </b>{low_address_number}</p>
-        <p><b>b7sc: </b>{b7sc}</p>
-        <p><b>bin: </b>{bin}</p>
-        <p><b>type_meaning: </b>{type_meaning}</p>
-        <p><b>tpad_bin_status: </b>{tpad_bin_status}</p>
     })
     */
 
