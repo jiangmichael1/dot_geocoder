@@ -1,0 +1,5 @@
+export const ActionTypes = {
+    SET_DATA : "SET_DATA",
+    SELECTED_DATUM : "SELECTED_DATUM",
+    REMOVE_SELECTED_DATUM : "REMOVE_SELECTED_DATUM"
+};
