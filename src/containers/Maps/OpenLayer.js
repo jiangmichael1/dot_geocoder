@@ -11,9 +11,14 @@ const map = new Map({
     }),
   ],
   view: new View({
-    center: [0, 0],
-    zoom: 2,
+    center: [40.7128, 74.0060],
+    zoom: 4,
   }),
 });
 
-export default map;
+const renderedMap = () => {
+    return (
+        <div id="map"></div>
+    )
+}
+export default renderedMap;

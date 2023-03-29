@@ -1,5 +1,3 @@
-
-
 .App {
   text-align: center;
 }
@@ -61,8 +59,8 @@ body {
 
 #map {
   position: absolute;
-  top: 25%;
-  bottom: 25%;
+  top: 50%;
+  bottom: 50%;
   left: 50%;
   width: 50%;
 }
