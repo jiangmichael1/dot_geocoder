@@ -1,3 +1,5 @@
+@import "node_modules/ol/ol.css";
+
 .App {
   text-align: center;
 }
@@ -49,4 +51,17 @@
 
 .request_form{
   margin-top:10%;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
