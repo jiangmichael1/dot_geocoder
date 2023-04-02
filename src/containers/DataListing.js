@@ -5,14 +5,28 @@ import { setData } from '../redux/actions/dataActions';
 import DataComponent from './DataComponent';
 import RequestForm from './RequestForm';
 
-// TO DO
-// X Fix all function 1A-related as they should be function 1B 
-// Get a working Map API that is free: OpenLayers
 
-// All of these constants need to be moved to the redux store. 
-// On form submit, the constants should be changed. 
-// Figure out how to use redux store
-// Read rows of cells from Excel and use that as input
+/* TO DO
+    Figure out OpenLayers map display
+    Figure out values
+    User input     
+*/
+
+/* 3/27/23
+   Got a working GitHub repo
+   Began working with OpenLayers Map Library
+   Corrected all usage of Function 1A to 1B
+   Successfully rendering each label -> Still need to figure out values
+   Fixed an issue with DisplayFormat = False causing weird spacing on return request
+*/
+
+/*  Overall Guidelines/To Do List
+    Figure out how to use redux store
+    All constants need storage in store so that it can be changed.
+    On form submit, the constants should be changed. 
+
+    Read rows of cells from Excel and use that as input
+*/
 
 // Parameters needed for both functions
 const proxy = "https://cors-anywhere.herokuapp.com/";
@@ -24,7 +38,6 @@ const function_1B = "Function_1B";
 const borough = "4"; //‘1’=Manhattan, ‘2’=Bronx, ‘3’=Brooklyn, ‘4’=Queens, ‘5’=Staten Island
 const addressNum = "6140"; 
 const streetName = "Saunders Street";
-
 
 //Function 3
 const function_3 = "Function_3"
