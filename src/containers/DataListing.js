@@ -5,29 +5,6 @@ import { setData } from '../redux/actions/dataActions';
 import DataComponent from './DataComponent';
 import RequestForm from './RequestForm';
 
-
-/* TO DO
-    Figure out OpenLayers map display
-    Figure out values
-    User input     
-*/
-
-/* 3/27/23
-   Got a working GitHub repo
-   Began working with OpenLayers Map Library
-   Corrected all usage of Function 1A to 1B
-   Successfully rendering each label -> Still need to figure out values
-   Fixed an issue with DisplayFormat = False causing weird spacing on return request
-*/
-
-/*  Overall Guidelines/To Do List
-    Figure out how to use redux store
-    All constants need storage in store so that it can be changed.
-    On form submit, the constants should be changed. 
-
-    Read rows of cells from Excel and use that as input
-*/
-
 // Parameters needed for both functions
 const proxy = "https://cors-anywhere.herokuapp.com/";
 const baseURL = "https://geoservice.planning.nyc.gov/geoservice/geoservice.svc/"
