@@ -3,7 +3,6 @@
 2. Figure out how to get values to display on fetch request
 3. User input/form submit - allow user to upload XLSX file that will display on webpage
 4. Learn to how to use Redux Store -> All constants need storage in Redux store such that they can be manipulated in real time
-5.      
 
 
 *3/27/23*
@@ -11,7 +10,7 @@
 - Began working with OpenLayers Map Library
 - Corrected all usage of Function 1A to 1B
 - Successfully rendering each label -> Still need to figure out values
-- Fixed an issue with DisplayFormat = False causing weird spacing on return request
+- Fixed an issue with 'DisplayFormat = False' causing weird spacing on return request
 
 *4/1/23*
 - Looked into Zhi's code to figure out how to iterate over fetch request's key/value pairs and get the values to display
@@ -21,6 +20,6 @@
 *4/3/23*
 - Started reading documentation on SheetJS's CE of XLSX
 - Encountered an error with "Uncaught TypeError" when trying to import XLSX from the './xlsx' library -> needed to import * as XLSX instead
-- Got a sample Excel file to display in console
+- Imported a sample Excel file and got it to display in console
 - Created this MD file to better note down each day's discoveries/learnings
-- 
+- Started using HotTable to display the imported Excel file
