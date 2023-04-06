@@ -23,3 +23,7 @@
 - Imported a sample Excel file and got it to display in console
 - Created this MD file to better note down each day's discoveries/learnings
 - Started using HotTable to display the imported Excel file
+
+*4/5/23*
+- Figuring out how to lift state up in React to pass array version of Excel data to HotTable
+- - Made a quick to-do list app to refresh memory on state managements
