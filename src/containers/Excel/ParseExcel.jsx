@@ -4,15 +4,17 @@ import 'handsontable/dist/handsontable.full.min.css';
 import Handsontable from 'handsontable/base';
 import { registerAllModules } from 'handsontable/registry';
 import { HotTable } from '@handsontable/react'
+import ExcelDisplay from './ExcelDisplay'
 
 // ParseExcel takes in an uploaded file and returns an array with all of the excel information as dataArray
 registerAllModules();
 
 //Imports an Excel sheet and displays it in the console
-export const ParseExcel = () => {
+export const ParseExcel = (props) => {
 
-    const [ arrayData, setArrayData] = useState()
+    const [arrayData, setArrayData] = useState()
     const [fileName, setFileName] = useState(null)
+    
 
     const handleFile = async (e) => {
         const file = e.target.files[0];
@@ -26,7 +28,8 @@ export const ParseExcel = () => {
             defval: "",
         } )
         const excelData = arrayData[0]
-        console.log(excelData)
+        setArrayData(excelData)
+        console.log(arrayData)
     }
 
     return (
@@ -36,7 +39,7 @@ export const ParseExcel = () => {
                 <p>FileName: <span>{fileName}</span></p>
             )}
             <input type="file" onChange={(e) => handleFile(e)} />
-            <p>{arrayData}</p>
+            <ExcelDisplay headers={arrayData} />
         </div>
     )
 }

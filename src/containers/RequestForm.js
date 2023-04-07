@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import Form1A from './RequestForms/Form1A';
 
 const RequestForm = (functionType, borough, addressNum, streetName, key) => {
     return (
