@@ -27,3 +27,5 @@
 *4/5/23*
 - Figuring out how to lift state up in React to pass array version of Excel data to HotTable
 - - Made a quick to-do list app to refresh memory on state managements
+- Figured out how to pass the array from the parse file to the display file
+- Working on how to display each header using .map
