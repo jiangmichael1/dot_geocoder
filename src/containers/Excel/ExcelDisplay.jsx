@@ -7,24 +7,18 @@ registerAllModules();
 
 const ExcelDisplay = (props) => {
     const header = props.headers
-    
-    
+    const data = props.data
     
     return (  
         <HotTable 
-        data={[
-            [{header}],
-            ['2023', "Test 1", "Test 2"],
-            ['2022', "Test 3", "Test 4"]
-        ]}
+        data={data}
+        
         rowHeaders = {false}
         colHeaders = {header}
         height="auto"
         licenseKey="non-commercial-and-evaluation" />
         
     )
-    
-
     
 }
 

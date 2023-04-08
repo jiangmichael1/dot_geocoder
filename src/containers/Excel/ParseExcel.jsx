@@ -13,23 +13,30 @@ registerAllModules();
 export const ParseExcel = (props) => {
 
     const [arrayData, setArrayData] = useState()
+    const [arrayHeaders, setArrayHeaders] = useState()
     const [fileName, setFileName] = useState(null)
     
-
     const handleFile = async (e) => {
         const file = e.target.files[0];
         setFileName(file.name);
         const data = await file.arrayBuffer();
         const workbook = XLSX.read(data)
         const worksheet = workbook.Sheets[workbook.SheetNames[0]]
+        
         // Makes the first array contain all headers and the rest of the arrays have the values
         const arrayData = XLSX.utils.sheet_to_json(worksheet, {
             header: 1,
             defval: "",
         } )
-        const excelData = arrayData[0]
-        setArrayData(excelData)
-        console.log(arrayData)
+
+        const excelHeadersRow = arrayData[0]
+
+        arrayData.shift();
+        const excelData = arrayData
+        
+        setArrayHeaders(excelHeadersRow)
+        setArrayData(arrayData)
+        
     }
 
     return (
@@ -39,7 +46,7 @@ export const ParseExcel = (props) => {
                 <p>FileName: <span>{fileName}</span></p>
             )}
             <input type="file" onChange={(e) => handleFile(e)} />
-            <ExcelDisplay headers={arrayData} />
+            <ExcelDisplay headers={arrayHeaders} data={arrayData}/>
         </div>
     )
 }

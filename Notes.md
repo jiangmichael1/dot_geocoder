@@ -29,3 +29,7 @@
 - - Made a quick to-do list app to refresh memory on state managements
 - Figured out how to pass the array from the parse file to the display file
 - Working on how to display each header using .map
+
+*4/7/23*
+- Got the table with headers display to work, now displays all the information from the imported table
+- To do: Lift the data up so it can be used for url fetch request 
