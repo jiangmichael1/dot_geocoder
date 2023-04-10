@@ -32,4 +32,9 @@
 
 *4/7/23*
 - Got the table with headers display to work, now displays all the information from the imported table
-- To do: Lift the data up so it can be used for url fetch request 
+- Lift the data up so it can be used for url fetch request 
+- - Figure out how to queue each row into a fetch request
+- - Store the needed column as a state 
+- - Maybe find a library for queueing? -> Check Zhi's code
+
+*4/10/23*
