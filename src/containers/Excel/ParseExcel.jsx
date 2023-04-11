@@ -11,11 +11,11 @@ registerAllModules();
 
 //Imports an Excel sheet and displays it in the console
 export const ParseExcel = (props) => {
-
     const [arrayData, setArrayData] = useState()
     const [arrayHeaders, setArrayHeaders] = useState()
-    const [fileName, setFileName] = useState(null)
-    
+    const [fileName, setFileName] = useState()
+
+    console.log(props)
     const handleFile = async (e) => {
         const file = e.target.files[0];
         setFileName(file.name);
@@ -35,15 +35,14 @@ export const ParseExcel = (props) => {
         const excelData = arrayData
         
         setArrayHeaders(excelHeadersRow)
-        setArrayData(arrayData)
+        setArrayData(excelData)
         
     }
 
     return (
-        <div>  
-            <h1 className="parseHeader">Parse Excel</h1>
+        <div>    
             {fileName && (
-                <p>FileName: <span>{fileName}</span></p>
+                <p className="import_file">FileName: <span>{fileName}</span></p>
             )}
             <input type="file" onChange={(e) => handleFile(e)} />
             <ExcelDisplay headers={arrayHeaders} data={arrayData}/>

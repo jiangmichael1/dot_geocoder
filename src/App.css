@@ -69,3 +69,11 @@ body {
 .parseHeader {
   margin-top: 20%;
 }
+
+.geocoder_header {
+  margin-top: 5%;
+}
+
+.import_file {
+  padding-top: 50px;
+}

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Header = () => {
     return(
-        <div className="ui fixed menu">
-            <div className='ui container center'>
-                <h2>Data Library</h2>
+        <div>
+            <div>
+                <h1 className='geocoder_header'>Geocoder</h1>
             </div>
         </div>
     )

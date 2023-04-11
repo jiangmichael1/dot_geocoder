@@ -4,6 +4,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setData } from '../redux/actions/dataActions';
 import DataComponent from './DataComponent';
 import RequestForm from './RequestForm';
+import { ParseExcel } from './Excel/ParseExcel';
+
+// Imported data
+console.log(ParseExcel)
 
 // Parameters needed for both functions
 const proxy = "https://cors-anywhere.herokuapp.com/";
@@ -49,8 +53,8 @@ const fetchData = async () => {
 
     return (
         <div className="ui grid container">        
-            <RequestForm />
             <DataComponent />
+            
         </div>
     );
 };

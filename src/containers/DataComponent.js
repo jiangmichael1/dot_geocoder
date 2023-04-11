@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { ParseExcel } from './Excel/ParseExcel';
 
 const DataComponent = () => {
     const data = useSelector((state) => state.allData.data);
